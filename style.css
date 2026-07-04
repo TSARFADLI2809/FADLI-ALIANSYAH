@@ -325,10 +325,7 @@ footer {
         height: 100px;
     }
 }
-/* ==========================================================================
-   RESPONSIVE DESIGN (UNTUK HP MODE PORTRAIT & LAYAR KECIL)
-   ========================================================================== */
-   @media (max-width: 576px) {
+@media (max-width: 576px) {
     /* 1. Mengubah susunan navbar menjadi vertikal */
     .navbar {
         flex-direction: column;

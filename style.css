@@ -378,12 +378,12 @@ footer {
 
     /* 2. MENURUNKAN FOTO PROFIL */
     .hero-image img {
-        width: 100px;
-        height: 100px;
+        width: 180px;
+        height: 180px;
         
         /* --- KODE KUNCI --- */
         /* Menambahkan jarak di atas foto untuk mendorongnya ke bawah */
-        margin-top: 60px; /* Sesuaikan angka ini (misal: 60px - 100px) sesuai selera */
+        margin-top: 100px; /* Sesuaikan angka ini (misal: 60px - 100px) sesuai selera */
         
         /* Berikan jarak juga ke teks di bawahnya */
         margin-bottom: 20px;

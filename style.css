@@ -325,32 +325,3 @@ footer {
         height: 200px;
     }
 }
-@media (max-width: 576px) {
-    /* 1. Mengubah susunan navbar menjadi vertikal */
-    .navbar {
-        flex-direction: column;
-        align-items: center;
-        gap: 12px;
-        padding: 15px 5%;
-    }
-
-    /* 2. Memaksa menu agar membungkus rapi jika tidak muat ke samping */
-    .nav-links {
-        display: flex;
-        flex-wrap: wrap; /* Menurunkan menu yang tidak muat secara rapi */
-        justify-content: center;
-        padding: 0;
-        gap: 10px 15px; /* Jarak atas-bawah dan kanan-kiri antar menu */
-    }
-
-    /* 3. Menghilangkan margin bawaan agar tidak berat sebelah */
-    .nav-links li {
-        margin: 0 !important;
-    }
-
-    /* 4. Menyesuaikan ukuran teks agar pas di layar portrait */
-    .nav-links a {
-        font-size: 0.85rem;
-        display: inline-block;
-    }
-}

@@ -386,4 +386,35 @@ footer {
     .contact-form {
         width: 100%;
     }
-}
+    @media (max-width: 576px) {
+    /* Membuat navbar menyusun atas (logo) dan bawah (menu) */
+    .navbar {
+        flex-direction: column;
+        padding: 10px 5%;
+        align-items: center;
+    }
+
+    /* Mengaktifkan fitur scroll horizontal pada menu */
+    .nav-links {
+        display: flex;
+        width: 100vw; /* Memenuhi lebar layar HP */
+        overflow-x: auto; /* Memunculkan fungsi scroll kanan-kiri */
+        white-space: nowrap; /* Mencegah menu turun ke bawah */
+        padding: 10px 20px;
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch; /* Membuat scroll mulus di iPhone */
+    }
+
+    /* Menyembunyikan scrollbar bawaan browser agar tetap estetik */
+    .nav-links::-webkit-scrollbar {
+        display: none;
+    }
+
+    .nav-links li {
+        margin: 0 15px; /* Jarak antar menu */
+        display: inline-block;
+    }
+    
+    .nav-links a {
+        font-size: 0.9rem;
+    }

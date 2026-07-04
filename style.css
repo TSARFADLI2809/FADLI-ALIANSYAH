@@ -353,4 +353,57 @@ footer {
         font-size: 0.85rem;
         display: inline-block;
     }
+}   
+    /* ==========================================================================
+   CSS UNTUK HP MODE PORTRAIT (LEBAR < 576px)
+   ========================================================================== */
+@media (max-width: 576px) {
+    
+    /* 1. Atur container hero agar jarak antar elemen rapi secara vertikal */
+    .hero-section {
+        flex-direction: column-reverse; /* Foto tetap di atas teks */
+        justify-content: center;
+        text-align: center;
+        height: auto;
+        min-height: 100vh;
+        
+        /* Hilangkan gap bawaan dan gunakan margin untuk kontrol yang lebih presisi */
+        gap: 0; 
+        padding-top: 80px; /* Jarak dari navbar */
+        padding-bottom: 50px;
+    }
+
+    /* 2. MENURUNKAN FOTO PROFIL */
+    .hero-image img {
+        width: 180px;
+        height: 180px;
+        
+        /* --- KODE KUNCI --- */
+        /* Menambahkan jarak di atas foto untuk mendorongnya ke bawah */
+        margin-top: 60px; /* Sesuaikan angka ini (misal: 60px - 100px) sesuai selera */
+        
+        /* Berikan jarak juga ke teks di bawahnya */
+        margin-bottom: 20px;
+        /* ------------------ */
+        
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    /* 3. Atur Teks di bawah foto */
+    .hero-content {
+        /* Tambahkan padding atas agar teks tidak langsung menempel ke foto */
+        padding-top: 10px;
+    }
+
+    .hero-content h1 {
+        font-size: 2.0rem; /* Sesuaikan ukuran font di HP agar tidak terlalu besar */
+        margin-bottom: 15px;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+        margin-bottom: 25px;
+        padding: 0 10px; /* Jarak teks ke samping layar */
+    }
 }

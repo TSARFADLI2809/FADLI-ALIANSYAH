@@ -328,64 +328,6 @@ footer {
 /* ==========================================================================
    RESPONSIVE DESIGN (UNTUK HP MODE PORTRAIT & LAYAR KECIL)
    ========================================================================== */
-@media (max-width: 576px) {
-    /* 1. Mengatur padding seluruh halaman agar tidak terlalu mentok ke pinggir HP */
-    .navbar {
-        padding: 15px 5%;
-    }
-    
-    .section {
-        padding: 60px 5%; /* Jarak antar bagian lebih rapat di HP */
-    }
-
-    /* 2. Mengatur halaman utama (Hero) agar menyusun vertikal ke bawah */
-    .hero-section {
-        flex-direction: column-reverse; /* Foto profil pindah ke atas teks */
-        justify-content: center;
-        text-align: center; /* Teks otomatis rata tengah agar estetik di HP */
-        padding-top: 120px;
-        height: auto;
-        min-height: 100vh;
-        gap: 30px;
-    }
-
-    .hero-content h1 {
-        font-size: 2.2rem; /* Memperkecil ukuran font judul agar tidak terpotong */
-    }
-
-    .hero-content p {
-        font-size: 1rem;
-    }
-
-    /* Jika Anda menambahkan foto profil seperti tips sebelumnya */
-    .hero-image img {
-        width: 180px;  /* Ukuran foto yang pas untuk layar portrait HP */
-        height: 180px;
-    }
-
-    /* 3. Mengatur Timeline (Education & Experience) */
-    .timeline {
-        padding-left: 20px; /* Memperkecil jarak garis timeline di kiri */
-    }
-
-    .timeline-item::before {
-        left: -31px; /* Menyesuaikan posisi titik timeline */
-    }
-
-    /* 4. Mengatur Skills Grid agar menjadi 1 kolom saja ke bawah */
-    .skills-grid {
-        grid-template-columns: 1fr; /* Memaksa kartu skill berjejer vertikal */
-        gap: 15px;
-    }
-    
-    .skill-card {
-        padding: 20px; /* Mengurangi padding dalam kartu */
-    }
-
-    /* 5. Mengatur Form Kontak agar melebar penuh sesuai layar HP */
-    .contact-form {
-        width: 100%;
-    }
     @media (max-width: 576px) {
     /* Membuat navbar menyusun atas (logo) dan bawah (menu) */
     .navbar {

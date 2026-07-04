@@ -318,11 +318,11 @@ footer {
         flex-direction: column-reverse; /* Foto pindah ke atas teks di HP */
         justify-content: center;
         text-align: center;
-        padding-top: 100px;
+        padding-top: 80px;
     }
     .hero-image img {
-        width: 200px;
-        height: 100px;
+        width: 180px;
+        height: 180px;
     }
 }
 @media (max-width: 576px) {
